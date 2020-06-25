@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-mysql-api",
+  "version": "1.0.0",
+  "description": "Rest api for a blog using nodejs-sequalize-mysql",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server",
+    "dev": "cross-env NODE_ENV=development nodemon server"
+  },
+  "keywords": [
+    "NodeJs",
+    "RestAPIs",
+    "Sequelize",
+    "Mysql",
+    "VueJs"
+  ],
+  "author": "Ashfaq H Ahmed",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.4"
+  }
+}
