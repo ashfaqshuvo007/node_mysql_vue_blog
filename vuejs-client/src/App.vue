@@ -1,9 +1,15 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="app" class="container-fluid">
+    <div class="site-info">
+      <h1>Ashfaq's Blog</h1>
+      <h3>Vue Nodejs Example</h3>
     </div>
+    <nav id="nav">
+      <router-link to="/">Users</router-link>|
+      <router-link to="/addUser">Add User</router-link>|
+      <router-link to="/searchUser">Search User</router-link>
+    </nav>
+    <br />
     <router-view />
   </div>
 </template>
@@ -16,7 +22,9 @@
   text-align: center;
   color: #2c3e50;
 }
-
+.site-info {
+  color: #42b983;
+}
 #nav {
   padding: 30px;
 }

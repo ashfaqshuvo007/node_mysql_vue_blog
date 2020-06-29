@@ -1,10 +1,9 @@
 const db = require('../db_config/db_config')
 const User = db.users
 
-
 //Post an User
 exports.create = (req, res) => {
-
+    console.log(req.body)
     //Save to DB
     User.create({
         name: req.body.name,
@@ -24,7 +23,9 @@ exports.findAll = (req, res) => {
     User.findAll().then(users => {
         //Send all users to client
         res.send(users)
-    }).catch()
+    }).catch(err => {
+        res.status(500).send("Error -> " + err)
+    })
 }
 
 //Find an user by Id

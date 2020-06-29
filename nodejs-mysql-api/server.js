@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000
 
 //User CORS
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'http://localhost:8080',
     optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions))
